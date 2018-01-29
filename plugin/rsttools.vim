@@ -15,28 +15,28 @@ if has("autocmd")
     autocmd FileType rst inoremap <silent> <leader>- yyPVr-yyjpo
 
     " Leveraging Riv for section formatting
-    autocmd FileType rst nnoremap <silent> <leader><leader>1 :RivTitle1
-    autocmd FileType rst inoremap <silent> <leader><leader>1 :RivTitle1
+    autocmd FileType rst nnoremap <silent> <leader><leader>1 :RivTitle1<CR>
+    autocmd FileType rst inoremap <silent> <leader><leader>1 :RivTitle1<CR>I
 
-    autocmd FileType rst nnoremap <silent> <leader><leader>2 :RivTitle2
-    autocmd FileType rst inoremap <silent> <leader><leader>2 :RivTitle2
+    autocmd FileType rst nnoremap <silent> <leader><leader>2 :RivTitle2<CR>
+    autocmd FileType rst inoremap <silent> <leader><leader>2 :RivTitle2<CR>I
 
-    autocmd FileType rst nnoremap <silent> <leader><leader>3 :RivTitle3
-    autocmd FileType rst inoremap <silent> <leader><leader>3 :RivTitle3
+    autocmd FileType rst nnoremap <silent> <leader><leader>3 :RivTitle3<CR>
+    autocmd FileType rst inoremap <silent> <leader><leader>3 :RivTitle3<CR>I
 
-    autocmd FileType rst nnoremap <silent> <leader><leader>4 :RivTitle4
-    autocmd FileType rst inoremap <silent> <leader><leader>4 :RivTitle4
+    autocmd FileType rst nnoremap <silent> <leader><leader>4 :RivTitle4<CR>
+    autocmd FileType rst inoremap <silent> <leader><leader>4 :RivTitle4<CR>I
 
-    autocmd FileType rst nnoremap <silent> <leader><leader>5 :RivTitle5
-    autocmd FileType rst inoremap <silent> <leader><leader>5 :RivTitle5
+    autocmd FileType rst nnoremap <silent> <leader><leader>5 :RivTitle5<CR>
+    autocmd FileType rst inoremap <silent> <leader><leader>5 :RivTitle5<CR>I
 
-    autocmd FileType rst nnoremap <silent> <leader><leader>6 :RivTitle6
-    autocmd FileType rst inoremap <silent> <leader><leader>6 :RivTitle6
+    autocmd FileType rst nnoremap <silent> <leader><leader>6 :RivTitle6<CR>
+    autocmd FileType rst inoremap <silent> <leader><leader>6 :RivTitle6<CR>I
 
     " Leverage Riv to list sections:
 
-    autocmd FileType rst nnoremap <silent> <leader><leader>s :RivHelpSection
-    autocmd FileType rst inoremap <silent> <leader><leader>s :RivHelpSection
+    autocmd FileType rst nnoremap <silent> <leader><leader>s :RivHelpSection<CR>
+    autocmd FileType rst inoremap <silent> <leader><leader>s :RivHelpSection<CR>
 
 
     " Horizontal Rule
