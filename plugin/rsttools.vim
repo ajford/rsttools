@@ -4,30 +4,39 @@ if has("autocmd")
     " PEP 8 says 80, I say 100
     autocmd FileType rst set textwidth=100
 
-    " Over and Under #'s.
-    " rST convention for Parts 
-    autocmd FileType rst nnoremap <leader>+ yyPVr#yyjpo
-    autocmd FileType rst inoremap <leader>+ yyPVr#yyjpo
+    " Over and Under ='s.
+    " rST convention for Document Title
+    autocmd FileType rst nnoremap <silent> <leader>= yyPVr=yyjpo
+    autocmd FileType rst inoremap <silent> <leader>= yyPVr=yyjpo
 
-    " Over and Under *'s.
-    " rST convention for Chapters 
-    autocmd FileType rst nnoremap <leader>_ yyPVr-yyjpo
-    autocmd FileType rst inoremap <leader>_ yyPVr=yyjpo
+    " Over and Under -'s.
+    " rST convention for Subtitle 
+    autocmd FileType rst nnoremap <silent> <leader>- yyPVr-yyjpo
+    autocmd FileType rst inoremap <silent> <leader>- yyPVr-yyjpo
 
-    " Under ='s.
-    " rST convention for Sections
-    autocmd FileType rst nnoremap <leader>= yypVr=o
-    autocmd FileType rst inoremap <leader>= yypVr=o
+    " Leveraging Riv for section formatting
+    autocmd FileType rst nnoremap <silent> <leader><leader>1 :RivTitle1
+    autocmd FileType rst inoremap <silent> <leader><leader>1 :RivTitle1
 
-    " Under -'s.
-    " rST convention for Subsection
-    autocmd FileType rst nnoremap <leader>- yypVr-o
-    autocmd FileType rst inoremap <leader>- yypVr-o
+    autocmd FileType rst nnoremap <silent> <leader><leader>2 :RivTitle2
+    autocmd FileType rst inoremap <silent> <leader><leader>2 :RivTitle2
 
-    " Under ^'s.
-    " rST convention for Subsubsection
-    autocmd FileType rst nnoremap <leader>0 yypVr^o
-    autocmd FileType rst inoremap <leader>0 yypVr^o
+    autocmd FileType rst nnoremap <silent> <leader><leader>3 :RivTitle3
+    autocmd FileType rst inoremap <silent> <leader><leader>3 :RivTitle3
+
+    autocmd FileType rst nnoremap <silent> <leader><leader>4 :RivTitle4
+    autocmd FileType rst inoremap <silent> <leader><leader>4 :RivTitle4
+
+    autocmd FileType rst nnoremap <silent> <leader><leader>5 :RivTitle5
+    autocmd FileType rst inoremap <silent> <leader><leader>5 :RivTitle5
+
+    autocmd FileType rst nnoremap <silent> <leader><leader>6 :RivTitle6
+    autocmd FileType rst inoremap <silent> <leader><leader>6 :RivTitle6
+
+    " Leverage Riv to list sections:
+
+    autocmd FileType rst nnoremap <silent> <leader><leader>s :RivHelpSection
+    autocmd FileType rst inoremap <silent> <leader><leader>s :RivHelpSection
 
 
     " Horizontal Rule

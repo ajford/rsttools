@@ -4,5 +4,8 @@ rsttools
 My compilation of key maps useful for reStructuredText documents. On here so I
 can install from [vundle][].
 
-[vundle]: https://github.com/gmarik/vundle
+Requires [`riv.vim`][riv] for functionality. Is mostly a collection of remaps
+and key binding.
 
+[vundle]: https://github.com/gmarik/vundle
+[riv]: https://github.com/gu-fan/riv.vim
